@@ -56,7 +56,7 @@ module Departure
         reconnect_with_percona
         include_foreigner if defined?(Foreigner)
 
-        ::Lhm.migration = self
+        #::Lhm.migration = self
         original_migrate(direction)
       end
 
